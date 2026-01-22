@@ -1,6 +1,6 @@
 cask "lingxidesktop" do
-  version "0.1.7"
-  sha256 "05947ffec03cdee95031ad6b4f78f297684f51a69dc6d628e3f5abeb40904459"
+  version "0.1.8"
+  sha256 "787fef5d2ed3c1e3999d56c80cf3beb0f5c90fdc2bb75f8a9002b8a353113ff9"
 
   url "https://github.com/HayaKus/LingxiDesktop/releases/download/v#{version}/lingxi-#{version}.dmg"
   name "LingxiDesktop"
