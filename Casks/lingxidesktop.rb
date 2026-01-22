@@ -1,11 +1,11 @@
 cask "lingxidesktop" do
-  version "0.1.8"
-  sha256 "787fef5d2ed3c1e3999d56c80cf3beb0f5c90fdc2bb75f8a9002b8a353113ff9"
+  version "0.1.9"
+  sha256 "a0096be78550e0210e265085e31611efc24582797d8032f2220a220a7f6a0558"
 
   url "https://github.com/HayaKus/LingxiDesktop/releases/download/v#{version}/lingxi-#{version}.dmg"
   name "LingxiDesktop"
-  name "灵析"
-  desc "具备屏幕感知能力的桌面AI助手"
+  name "桌面伙伴"
+  desc "具备屏幕感知能力的轻量级桌面AI同事"
   homepage "https://github.com/HayaKus/LingxiDesktop"
 
   livecheck do
@@ -15,25 +15,25 @@ cask "lingxidesktop" do
     end
   end
 
-  app "灵析.app"
+  app "桌面伙伴.app"
 
   # 使用 zap 来完全清理应用数据（可选）
   zap trash: [
-    "~/Library/Application Support/灵析",
+    "~/Library/Application Support/桌面伙伴",
     "~/Library/Application Support/lingxi",
     "~/Library/Preferences/com.alibaba.lingxi.plist",
     "~/Library/Preferences/com.iamdog.app.plist",
-    "~/Library/Logs/灵析",
+    "~/Library/Logs/桌面伙伴",
     "~/Library/Saved Application State/com.alibaba.lingxi.savedState",
     "~/Library/Saved Application State/com.iamdog.app.savedState",
   ]
 
   # 安装后的提示信息
   caveats <<~EOS
-    欢迎使用 LingxiDesktop (灵析) - 具备屏幕感知能力的桌面AI助手
+    欢迎使用 桌面伙伴 - 具备屏幕感知能力的桌面AI助手
 
     首次启动应用时，如果遇到"已损坏"的提示，请执行：
-      xattr -cr /Applications/灵析.app
+      xattr -cr /Applications/桌面伙伴.app
 
     或者在系统设置中允许运行：
       系统设置 -> 隐私与安全性 -> 允许从以下位置下载的App
